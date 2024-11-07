@@ -9,7 +9,8 @@ function ProductDetails() {
     const {tile,setTile} =useContext(ShoppingContext);
     
    
-const  API_URL ="http://localhost:3500/items";
+// const  API_URL ="http://localhost:3500/items";
+const  API_URL ="https://delyte-01.github.io/fake_api/db.json";
   async function fetchProductDetails(){
     const apiResponse =await fetch(`${API_URL}/${id}`);
     const result = await apiResponse.json();
